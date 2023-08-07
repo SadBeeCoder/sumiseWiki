@@ -21,6 +21,14 @@ body {
             ". i1 . i2 . ";
 }
 
+.left-input {
+    grid-column: 2 / span 1;
+}
+
+.right-input {
+    grid-column: 4 / span 1;
+}
+
 .header {
     grid-area: h;
     padding: 10px;
