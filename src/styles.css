@@ -34,7 +34,7 @@ body {
     padding: 10px;
     background-color:rgba(96, 40, 4, 0.5);
     color: rgb(250,250,250);
-
+    text-align: right;
 }
 
 .main {
