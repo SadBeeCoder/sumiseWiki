@@ -1,0 +1,46 @@
+body {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+            "h h h h h "
+            "n n n n n "
+            "m m m m m "
+            ". t . t . "
+            ". i . i . "
+}
+
+.header {
+    grid-area: h;
+    padding: 10px;
+
+}
+.navbar {
+    grid-area: n;
+    padding: 10px;
+
+}
+
+.main {
+    grid-area: m;
+    padding: 10px;
+}
+
+.infotext {
+    grid-area: i;
+    padding: 10px;
+}
+
+.textheader{
+    grid-area: t;
+    padding: 10px;
+}
+@media (max-width: 768px) {
+    body {
+        grid-template-areas:
+                    "h"
+                    "n"
+                    "m"
+                    "t"
+                    "i";
+    }
+}
