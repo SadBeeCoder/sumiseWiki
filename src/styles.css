@@ -1,18 +1,18 @@
-body {
+.content {
     display: grid;
-    background-image: url(https://img.freepik.com/vektoren-kostenlos/abstrakter-hintergrund-mit-einem-vintage-papierdesign_1048-14629.jpg?w=2000);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    gap: 20px;
+    grid-gap: 20px;
     font-family: "Trirong", serif;
     grid-template-areas:
-            "h h h h h "
-            "n n n n n "
             ". m m m . "
             ". t1 . t2 ."
             ". i1 . i2 . "
             "f f f f f";
+}
+body{
+    background-image: url(https://img.freepik.com/vektoren-kostenlos/abstrakter-hintergrund-mit-einem-vintage-papierdesign_1048-14629.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 .left-input {
@@ -24,7 +24,6 @@ body {
 }
 
 .header {
-    grid-area: h;
     padding: 10px;
     background-color: rgba(96, 40, 4, 1);
     color: rgb(250, 250, 250);
@@ -34,11 +33,12 @@ body {
 }
 
 .navbar {
-    grid-area: n;
+    display: flex;
     padding: 10px;
     background-color: rgba(96, 40, 4, 0.5);
     color: rgb(250, 250, 250);
     text-align: right;
+    margin-bottom:20px;
 }
 
 .main {
