@@ -38,8 +38,11 @@ body{
     background-color: rgba(96, 40, 4, 0.6);
     color: rgb(250, 250, 250);
     font-family: "Trirong", serif;
-    text-align: right;
+    text-align:right;
     margin-bottom:20px;
+}
+a {
+    margin-right:10px;
 }
 
 a:link {
@@ -99,8 +102,6 @@ a:hover{
 
     body {
         grid-template-areas:
-                    "h"
-                    "n"
                     "m"
                     "t1"
                     "i1"
