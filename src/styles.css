@@ -1,5 +1,5 @@
-*{
-outline: #4CAF50 solid 10px;
+* {
+    outline: #4CAF50 solid 10px;
 }
 
 .center {
@@ -8,6 +8,10 @@ outline: #4CAF50 solid 10px;
 
 body {
     display: grid;
+    background-image: url(https://img.freepik.com/vektoren-kostenlos/abstrakter-hintergrund-mit-einem-vintage-papierdesign_1048-14629.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     gap: 20px;
     grid-template-areas:
             "h h h h h "
@@ -22,6 +26,7 @@ body {
     padding: 10px;
 
 }
+
 .navbar {
     grid-area: n;
     padding: 10px;
@@ -35,30 +40,33 @@ body {
 
 .infotext1 {
     grid-area: i1;
-    place-items: center;
-    padding: 10px;
-}
-.infotext2 {
-    grid-area: i2;
-    place-items: center;
     padding: 10px;
 }
 
-.textheader1{
+.infotext2 {
+    grid-area: i2;
+    padding: 10px;
+}
+
+.textheader1 {
     grid-area: t1;
     padding: 10px;
 }
-.textheader2{
+
+.textheader2 {
     grid-area: t2;
     padding: 10px;
 }
+
 @media (max-width: 768px) {
     body {
         grid-template-areas:
                     "h"
                     "n"
                     "m"
-                    "t"
-                    "i";
+                    "t1"
+                    "i1"
+                    "t2"
+                    "i2";
     }
 }
