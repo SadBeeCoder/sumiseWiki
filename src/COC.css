@@ -3,13 +3,15 @@
     grid-gap: 20px;
     font-family: "Trirong", serif;
     grid-template-areas:
-            ". m m m . "
+            "m m m m m"
             ". t1 . t2 ."
-            ". i1 . i2 . "
-            "f f f f f";
+            ". i1 . i2 ."
+            ". t3 . t4 ."
+            ". i3 . i4 ."
+            " f f f f f ";
 }
 body{
-    background-image: url(https://img.freepik.com/vektoren-kostenlos/abstrakter-hintergrund-mit-einem-vintage-papierdesign_1048-14629.jpg?w=2000);
+    background-image:url(../img/background.jpg););
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -31,6 +33,10 @@ body{
     font-size: 50px;
     display: flex;
     align-items: center;
+}
+.bold {
+    font-weight: bold;
+    color: goldenrod;
 }
 
 .navbar {
@@ -61,8 +67,12 @@ a:hover{
     background-color: transparent;
     text-decoration: underline;
 }
-
+.responsive{
+    max-width: 100%;
+    height: auto;
+}
 .main {
+    display: flex;
     grid-area: m;
     padding: 10px;
     background-color: rgba(96, 40, 4, 0.5);
@@ -76,7 +86,6 @@ a:hover{
     color: rgb(250, 250, 250);
 }
 
-
 .infotext2 {
     grid-area: i2;
     padding: 10px;
@@ -84,32 +93,128 @@ a:hover{
     color: rgb(250, 250, 250);
 }
 
+.infotext3 {
+    grid-area: i3;
+    padding: 10px;
+    background-color: rgba(96, 40, 4, 0.5);
+    color: rgb(250, 250, 250);
+}
+.infotext3 {
+    grid-area: i3;
+    padding: 10px;
+    background-color: rgba(96, 40, 4, 0.5);
+    color: rgb(250, 250, 250);
+}
+.infotext4 {
+    grid-area: i4;
+    padding: 10px;
+    background-color: rgba(96, 40, 4, 0.5);
+    color: rgb(250, 250, 250);
+}
+
 .textheader1 {
+    text-align: center;
+    font-size: 20px;
     grid-area: t1;
+    background-image:url("../img/cthulu3.png") ;
     padding: 10px;
     background-color: rgba(96, 40, 4, 0.5);
     color: rgb(250, 250, 250);
 }
 
 .textheader2 {
+    text-align: center;
+    font-size: 20px;
     grid-area: t2;
+    background-image:url("../img/cthulu3.png") ;
     padding: 10px;
     background-color: rgba(96, 40, 4, 0.5);
     color: rgb(250, 250, 250);
 }
 
-@media (max-width: 768px) {
+.textheader3 {
+    text-align: center;
+    font-size: 20px;
+    grid-area: t3;
+    background-image:url("../img/cthulu3.png");
+    padding: 10px;
+    background-color: rgba(96, 40, 4, 0.5);
+    color: rgb(250, 250, 250);
+}
+.textheader4 {
+    text-align: center;
+    font-size: 20px;
+    grid-area: t4;
+    background-image:url("../img/cthulu3.png");
+    padding: 10px;
+    background-color: rgba(96, 40, 4, 0.5);
+    color: rgb(250, 250, 250);
+}
 
-    body {
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #3C368C;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#backToTopBtn:hover {
+    background-color: #555;
+}
+
+
+
+
+      /*  .content {
+            display: grid;
+            grid-gap: 20px;
+            font-family: "Trirong", serif;
+            grid-template-areas:
+        ". m m m . "
+        ". t1 . t2 ."
+        ". i1 . i2 . "
+        "f f f f f";
+        }*/
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-areas:
+            ". m m m . "
+            ". t1 t1 t1 . "
+            ". i1 i1 i1 . "
+            ". t2 t2 t2 . "
+            ". i2 i2 i2 . "
+            ". t3 t3 t3 . "
+            ". i3 i3 i3 . "
+            ". t4 t4 t4 . "
+            ". i4 i4 i4 . "
+            "f f f f f";
+    }
+}
+/*@media (max-width: 768px) {
+
+body {
         grid-template-areas:
                     "m"
                     "t1"
                     "i1"
                     "t2"
                     "i2"
+                    "t3"
+                    "i3"
+                    "t4"
+                    "i4"
                     "f";
     }
-}
+}*/
 
 .container{
     display:flex;
